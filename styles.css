@@ -184,31 +184,6 @@ header {
 }
 
 
-.team-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    background-color: #292929;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-/* General Team Styles */
-/* General Team Styles */
 .team {
     padding: 4rem 2rem;
     background-color: #1f1f1f;
@@ -241,11 +216,11 @@ header {
 }
 
 .team-member {
-    background-color: #292929;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 100%;
     text-align: center;
+    background: none;  /* Ensure no background color */
+    border: none;      /* Ensure no border */
+    padding: 0;        /* Ensure no padding */
+    box-shadow: none;  /* Remove any potential shadow */
 }
 
 .team-member img {
@@ -259,6 +234,12 @@ header {
 .team-member h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #ccc;
 }
 
 footer {
@@ -268,6 +249,7 @@ footer {
     padding: 1rem;
     font-size: 0.875rem;
 }
+
 
 
 
