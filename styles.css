@@ -1,0 +1,313 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.logo-link {
+    text-decoration: none; 
+}
+
+.logo-link h1 {
+    color: white; 
+}
+
+/* Navbar */
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/background-img.png') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e68a00;
+}
+
+/* General Info Section */
+.general-info {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.general-info h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.general-info p {
+    margin-bottom: 2rem;
+}
+
+.images-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.images-grid img {
+    border-radius: 10px;
+    max-width: 320px;
+    height: auto;
+}
+
+/* About, Team, Sponsorship Pages */
+.about, .team, .sponsorship {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2, .team h2, .sponsorship h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #292929;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* General Team Styles */
+/* General Team Styles */
+.team {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.team h3 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+}
+
+.team-grid {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.mentors {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.department {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-member {
+    background-color: #292929;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+
+
+/* Sponsorship Section */
+.sponsorship {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.sponsorship-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsorship h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sponsorship p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.pdf-viewer {
+    margin: 2rem 0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
